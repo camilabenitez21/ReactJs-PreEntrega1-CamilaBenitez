@@ -1,25 +1,20 @@
-import logo from './logo.svg';
 import './App.css';
+import React from 'react';
+import MiNavbar from './components/NavBar';
+import ItemListContainer from './components/ItemListContainer';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <MiNavbar></MiNavbar>
+      <h1>Bienvenidos a Candelitte Clothing</h1>
+      <p>No puede dejar de aprovechar las ofertas imperdibles.</p>
+      <ItemListContainer greeting="¡Hola, bienvenido a mi tienda en línea!" />
     </div>
+
+
   );
 }
 
 export default App;
+
